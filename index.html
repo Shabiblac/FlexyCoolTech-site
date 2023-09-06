@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexycool Tech</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'> -->
     <link rel="stylesheet" href="./CSS-styles/style.css">
 </head>
 <body>
-    
+    <header id="header">
+        <div class="top-nav">
+            <a href="#header">
+                <h1 class="logo">Flexycool<span>Tech</span></h1>
+            </a>
+           <div class="top-nav-search">
+            <input type="text" placeholder="Search product..." class="search-input">
+            <div class="topnav-icon">
+                <i class='bx bx-search-alt bx-tada bx-flip-vertical bx-sm search-icon' style='color:#fffcfc' ></i>
+            </div>
+           </div>
+        </div>
+        <nav>
+            <div class="nav-product">
+                <a href="shop.html">All Product</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">New Arrivals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html"><i class='bx bx-cart-alt cart-icon bx-md' style='color:black' ></i></a></li>
+            </ul>
+        </nav>
+        <div class="menubox">
+            <div class="mobile-topnav">
+                <div class="mobile-logo">
+                    <i class='bx bx-menu-alt-left bx-md menu-icon'></i>
+                    <a href="#header">
+                      <h1 class="logo">Flexycool<span>Tech</span></h1>
+                    </a>
+                </div>
+                <div><a href="cart.html"><i class='bx bx-cart-alt cart-icon bx-md' style='color:black' ></i></a></div>
+            </div>
+            <div class="moblie-navbar hide">
+                <div class="top-nav-search">
+                    <input type="text" placeholder="Search product..." class="search-input">
+                    <div class="topnav-icon">
+                        <i class='bx bx-search-alt bx-tada bx-flip-vertical bx-sm search-icon' style='color:#fffcfc' ></i>
+                    </div>
+                    <i class='bx bxs-x-circle bx-md close-icon' style='color:#ffffff' ></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="shop.html" class="menu-link">All Product</a></li>
+                    <li><a href="new.html" class="menu-link">New Arrivals</a></li>
+                    <li><a href="contact.html" class="menu-link">Contact</a></li>
+                    <li><a href="about.html" class="menu-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <script src="./JS/index.js"></script>
 </body>
 </html>
