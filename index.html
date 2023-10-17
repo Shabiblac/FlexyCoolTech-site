@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexycool Tech</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'> -->
     <link rel="stylesheet" href="./CSS-styles/style.css">
+    <link rel="stylesheet" href="./CSS-styles/desktop.css">
+    <link rel="stylesheet" href="./CSS-styles/mobile.css">
 </head>
 <body>
     <header id="header">
@@ -45,7 +50,7 @@
             </div>
             <div class="moblie-navbar hide">
                 <div class="top-nav-search">
-                    <input type="text" placeholder="Search product..." class="search-input">
+                    <input type="text" placeholder="Search product..." class="search-input" id="srch-input">
                     <div class="topnav-icon">
                         <i class='bx bx-search-alt bx-tada bx-flip-vertical bx-sm search-icon' style='color:#fffcfc' ></i>
                     </div>
@@ -64,16 +69,71 @@
 
     <main>
         <section class="hero">
-            <div class="slider">
-                <img src="./images/hero1.jpeg" alt="Image 1">
-                <img src="./images/hero2.jpeg" alt="Image 2">
-                <img src="./images/hero3.jpeg" alt="Image 3">
-                <img src="./images/hero4.jpeg" alt="Image 3">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./images/hero1.jpeg" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="./images/hero2.jpeg" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="./images/hero3.jpeg" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="./images/hero4.jpeg" alt="Image 4"></div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            
+            <div class="hero-info">
+                <div class="info-content">
+                    <div class="info-icon">
+                        <i class='bx bxs-truck bx-lg'></i>
+                    </div>
+                    <h4>Fast shiping</h4>
+                    <p>We deliver very fast and urgent</p>
+                </div>
+                <div class="info-content">
+                    <div class="info-icon">
+                        <i class='bx bx-credit-card bx-lg' ></i>
+                    </div>
+                    <h4>Fast shiping</h4>
+                    <p>We deliver very fast and urgent</p>
+                </div>
+                <div class="info-content">
+                    <div class="info-icon">
+                        <i class='bx bx-message-rounded-dots bx-lg' ></i>
+                    </div>
+                    <h4>Availabe 24/7</h4>
+                    <p>Need help? contact us anytime</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="details-info">
+                <div class="detais-content">
+                    <div class="details-icon">
+                        <i class='bx bxs-truck bx-lg'></i>
+                    </div>
+                    <h4>Fast shiping</h4>
+                    <p>We deliver very fast and urgent</p>
+                </div>
+                <div class="detais-content">
+                    <div class="details-icon">
+                        <i class='bx bx-credit-card bx-lg' ></i>
+                    </div>
+                    <h4>Fast shiping</h4>
+                    <p>We deliver very fast and urgent</p>
+                </div>
+                <div class="detais-content">
+                    <div class="details-icon">
+                        <i class='bx bx-message-rounded-dots bx-lg' ></i>
+                    </div>
+                    <h4>Availabe 24/7</h4>
+                    <p>Need help? contact us anytime</p>
+                </div>
+            </div>
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./JS/index.js"></script>
 </body>
 </html>

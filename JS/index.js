@@ -26,3 +26,18 @@ menuLinks.forEach((link) => {
         mobileNav.classList.toggle('hide')
     })
 });
+//  Hero section slider //
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 5000,
+        disableOnInteractio:false
+    },
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+ });
+  
