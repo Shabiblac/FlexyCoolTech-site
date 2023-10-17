@@ -19,4 +19,9 @@
     .details {
         display: none;
     }
+
+    /* Category */
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
