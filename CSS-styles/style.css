@@ -119,13 +119,14 @@ nav {
 /* CATEGORY SECTION */
 .category-grid {
     display: grid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(181, 181, 181);
+    margin: 90px;
 }
 
 .product-container {
-    margin: 30px;
+    /* margin: 30px; */
     border: 2px solid rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(181, 181, 181);
     text-align: center;
     padding: 50px;
 }
